@@ -1,6 +1,16 @@
 (function () {
   document.getElementById('year').textContent = String(new Date().getFullYear());
-  var menuButton = document.querySelector('.menu-toggle');\n  var nav = document.getElementById('main-nav');\n  menuButton.addEventListener('click', function () {\n    var open = menuButton.getAttribute('aria-expanded') === 'true';\n    menuButton.setAttribute('aria-expanded', String(!open));\n    nav.classList.toggle('is-open', !open);\n  });\n  nav.addEventListener('click', function (event) {\n    if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }\n  });\n  var form = document.getElementById('inquiry-form');
+  var menuButton = document.querySelector('.menu-toggle');
+  var nav = document.getElementById('main-nav');
+  menuButton.addEventListener('click', function () {
+    var open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!open));
+    nav.classList.toggle('is-open', !open);
+  });
+  nav.addEventListener('click', function (event) {
+    if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }
+  });
+  var form = document.getElementById('inquiry-form');
   var status = document.getElementById('form-status');
   form.addEventListener('submit', function (event) {
     event.preventDefault();
