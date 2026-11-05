@@ -16,7 +16,8 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="ProblemFoundry home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 34 26" focusable="false"><path d="M3 23V3h7a6 6 0 0 1 0 12H3M21 23V3h10M21 10h8" /></svg></span><span>ProblemFoundry</span></a>
-      <nav aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="menu-lines" aria-hidden="true"></span><span class="menu-label">Menu</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
         <a href="#approach">Approach</a>
         <a href="#blueprint">The blueprint</a>
         <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
@@ -122,7 +123,7 @@
         <div class="contact-copy">
           <div class="eyebrow eyebrow-light">05 <span>/</span> START WITH A NOTE</div>
           <h2>What’s taking<br><em>too much time?</em></h2>
-          <p>Tell us about one task your team repeats. We’ll read your note and reply by email with a sensible next step.</p>
+          <p>Describe one task your team repeats, how often it happens, and what slows it down. We’ll reply by email with a practical next step—no call required.</p>
           <div class="contact-email"><span>Prefer to write directly?</span><a href="mailto:hello@problemfoundry.eu">hello@problemfoundry.eu <span aria-hidden="true">↗</span></a></div>
           <div class="no-call"><span><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><title>Written first</title><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4"/></svg></span> Written communication first. No sales call required.</div>
         </div>
@@ -130,7 +131,7 @@
           <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Name" autocomplete="name" required maxlength="120" />
           <label for="email">Work email</label><input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required maxlength="180" />
           <label for="company">Company / industry <span>optional</span></label><input id="company" name="company" type="text" placeholder="Company or industry" maxlength="160" />
-          <label for="challenge">What process would you like to improve?</label><textarea id="challenge" name="challenge" placeholder="Briefly describe the task, how often it happens, and what makes it frustrating..." required minlength="15" maxlength="2500" rows="4"></textarea>
+          <label for="challenge">What process would you like to improve?</label><textarea id="challenge" name="challenge" placeholder="For example: “We copy order details from emails into a spreadsheet several times a day.”" required minlength="15" maxlength="2500" rows="4"></textarea>
           <button class="button button-lime" type="submit">Prepare email inquiry <span aria-hidden="true">↗</span></button>
           <p class="form-note" id="form-status" role="status">Your email app will open with your message ready to send. Nothing is stored on this website.</p>
         </form>
@@ -139,7 +140,7 @@
   </main>
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <a class="brand brand-footer" href="#top" aria-label="ProblemFoundry home"><span class="brand-mark" aria-hidden="true">P<span>.</span></span><span>ProblemFoundry</span></a>
+      <a class="brand brand-footer" href="#top" aria-label="ProblemFoundry home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 34 26" focusable="false"><path d="M3 23V3h7a6 6 0 0 1 0 12H3M21 23V3h10M21 10h8" /></svg></span><span>ProblemFoundry</span></a>
       <p>Independent problem discovery & workflow advisory.</p>
       <a class="footer-email" href="mailto:hello@problemfoundry.eu">hello@problemfoundry.eu</a>
       <span class="copyright">© <span id="year">2026</span> ProblemFoundry</span>
