@@ -389,3 +389,7 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
   .footer-email,.copyright { font-size: 12px; }
   .footer-inner { gap: 14px 18px; }
 }
+
+@media (min-width: 901px) {
+  .hero h1 { font-size: clamp(58px,5.4vw,74px); }
+}
