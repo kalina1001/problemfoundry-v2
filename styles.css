@@ -431,3 +431,5 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
   .report-header,.report-footer { font-size: 9px; }
   .report-item { font-size: 13px; }
 }
+
+.brand-mark svg { width: 30px; height: 24px; } .brand-footer .brand-mark svg { width: 25px; height: 20px; }
