@@ -235,3 +235,157 @@ button, input, textarea { font: inherit; }
   html { scroll-behavior: auto; }
   *,*::before,*::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* Dark forest palette and larger, calmer typography */
+:root {
+  --paper: #152521;
+  --paper-deep: #20342f;
+  --ink: #101c19;
+  --ink-soft: #c5d2c5;
+  --body: #c2cec3;
+  --line: #435850;
+  --lime: #d9ed78;
+  --lime-deep: #c5dc62;
+  --white: #e8e4d7;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+body { background: var(--paper); color: var(--white); font-size: 18px; }
+.site-header,.hero,.method-section,.fit-section { background: #152521; color: var(--white); }
+.header-inner { border-bottom-color: var(--line); }
+.brand { font-family: var(--font-body); font-size: 19px; letter-spacing: -.2px; }
+.brand-mark { background: var(--lime); color: var(--ink); border-radius: 10px 10px 10px 3px; }
+.brand-mark span,.brand-footer .brand-mark span { color: #63804a; }
+.site-header nav { font-size: 15px; }
+.site-header nav a:not(.nav-contact) { color: #c2cec3; }
+.site-header nav a:not(.nav-contact):hover { color: var(--lime); }
+.nav-contact { border-color: #71877d; color: var(--white); font-size: 14px; }
+.nav-contact:hover { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+.hero { padding-top: 85px; }
+.eyebrow,.eyebrow-dark { color: #d5e891; font-size: 12px; letter-spacing: 1.35px; }
+.eyebrow-dot { background: var(--lime); box-shadow: 0 0 0 4px #d9ed7820; }
+.hero h1 { color: var(--white); font-family: var(--font-display); font-size: clamp(62px,7vw,96px); font-weight: 400; line-height: 1.04; letter-spacing: -.045em; }
+.hero h1 em,h2 em,.method-heading h2 em,.blueprint-copy h2 em,.fit-layout h2 em { color: var(--lime); }
+.hero-lede { color: #c7d2c8; font-size: 20px; line-height: 1.7; }
+.button { min-height: 54px; padding-inline: 22px; font-size: 15px; }
+.quiet-link { color: #e6e3d8; font-size: 15px; }
+.quiet-link span,.proof-icon,.step-arrow { color: var(--lime); }
+.hero-proof { color: #b8c7bc; font-size: 14px; }
+.workflow-visual { min-height: 415px; background: #243b34; border-color: #526a5c; box-shadow: 0 22px 58px #07120f55; }
+.visual-top,.visual-foot { color: #c7d2c2; font-size: 11px; letter-spacing: 1.1px; }
+.visual-index { color: #a9b8aa; }
+.visual-title { font-family: var(--font-display); font-size: 28px; font-weight: 400; letter-spacing: 0; }
+.flow-node { min-height: 63px; background: #ffffff08; border-color: #71867a; }
+.flow-node-focus { background: #d9ed7819; border-color: #d9ed78a0; }
+.flow-node b { color: #f0ecdf; font-size: 15px; }
+.flow-node small { color: #c4d0c4; font-size: 13px; }
+.node-symbol { width: 35px; height: 35px; font-size: 21px; }
+.hero-ribbon { border-top-color: var(--line); color: #c0cec1; font-size: 11px; }
+.ribbon-line { background: #607469; }
+.section { padding: 112px 0; }
+.problem-section { background: #1c302b; color: var(--white); }
+.problem-section .eyebrow { color: var(--lime); }
+.section-intro h2,.method-heading h2,.blueprint-copy h2,.fit-layout h2,.contact-copy h2 { color: #ebe7da; font-family: var(--font-display); font-size: clamp(48px,5vw,68px); font-weight: 400; letter-spacing: -.035em; line-height: 1.13; }
+.problem-section .section-intro h2 { color: #ebe7da; }
+.problem-section .section-intro p,.method-heading p,.blueprint-copy > p,.contact-copy > p { color: #c4d0c5; font-size: 17px; line-height: 1.8; }
+.friction-grid { gap: 16px; }
+.friction-card { min-height: 238px; padding: 27px 25px; background: #263c35; border-color: #52685e; }
+.card-index { color: #c0ccb9; font-size: 12px; }
+.card-icon { width: 43px; height: 43px; font-size: 22px; }
+.friction-card h3 { color: #eeeadd; font-size: 20px; letter-spacing: -.35px; }
+.friction-card p { color: #c5d0c5; font-size: 16px; line-height: 1.65; }
+.section-note { color: #d5dfd2; font-size: 14px; }
+.method-section { background: #152521; }
+.method-heading { margin-top: 26px; }
+.method-heading p { max-width: 365px; }
+.steps { border-color: var(--line); }
+.step { min-height: 260px; padding-top: 25px; }
+.step + .step { border-left-color: var(--line); }
+.step-top { color: #ced9bd; font-size: 12px; letter-spacing: 1px; }
+.step-arrow { font-size: 22px; }
+.step h3 { margin-top: 38px; color: #eeeadd; font-family: var(--font-body); font-size: 22px; font-weight: 600; letter-spacing: -.3px; }
+.step p { color: #c4d0c5; font-size: 16px; line-height: 1.7; }
+.blueprint-section { background: #20342f; color: var(--white); }
+.blueprint-copy > p { max-width: 455px; }
+.price-row strong { color: var(--lime); font-family: var(--font-display); font-size: 52px; font-weight: 400; }
+.price-row span { color: #c5d0c4; font-size: 11px; letter-spacing: .8px; }
+.button-dark { background: var(--lime); color: var(--ink); }
+.button-dark:hover { background: var(--lime-deep); }
+.report-card { background: #293d36; border: 1px solid #63766b; box-shadow: 0 22px 55px #07120f3d; color: #ece8db; }
+.report-header,.report-footer { color: #c1cec0; font-size: 10px; letter-spacing: .9px; }
+.report-header i { color: var(--lime); }
+.report-title { color: #f0ecdf; font-family: var(--font-display); font-size: 37px; font-weight: 400; letter-spacing: -.6px; }
+.report-subtitle { color: #c3cfc2; font-size: 14px; }
+.report-rule { background: #9eae9b; }
+.report-item { border-bottom-color: #53665b; color: #e0e2d4; font-size: 15px; font-weight: 500; }
+.report-item span { color: var(--lime); font-size: 13px; }
+.fit-section { background: #172923; }
+.fit-list article { border-color: #435850; }
+.fit-list article > span { background: #d9ed78; color: #20342f; font-size: 13px; }
+.fit-list h3 { color: #eeeadd; font-size: 18px; }
+.fit-list p { color: #c2cec3; font-size: 15px; line-height: 1.65; }
+.contact-section { background: #101c19; color: var(--white); }
+.contact-copy h2 { font-size: clamp(52px,5.4vw,72px); }
+.contact-copy > p { max-width: 455px; }
+.contact-email > span { color: #c0cec1; font-size: 14px; }
+.contact-email a { color: var(--lime); font-size: 19px; }
+.no-call { color: #c2cec3; font-size: 14px; }
+.contact-form label { color: #e8e4d7; font-size: 14px; }
+.contact-form label:not(:first-child) { margin-top: 19px; }
+.contact-form label span { color: #b8c6ba; }
+.contact-form input,.contact-form textarea { padding: 14px 15px; background: #1d322c; border-color: #60746a; color: #f0ecdf; font-size: 16px; }
+.contact-form input::placeholder,.contact-form textarea::placeholder { color: #b5c4b6; }
+.contact-form textarea { min-height: 130px; }
+.button-lime { background: var(--lime); color: var(--ink); }
+.form-note { color: #bac8bd; font-size: 13px; }
+.site-footer { background: #0b1714; color: #e8e4d7; }
+.brand-footer { color: #e8e4d7; }
+.brand-footer .brand-mark { background: var(--lime); color: var(--ink); }
+.footer-inner p,.copyright,.footer-email { color: #c0cec1; font-size: 13px; }
+
+@media (max-width: 900px) {
+  .hero h1 { font-size: clamp(56px,8vw,76px); }
+  .section { padding: 88px 0; }
+}
+@media (max-width: 680px) {
+  body { font-size: 17px; }
+  .brand { font-size: 16px; }
+  .site-header nav { font-size: 14px; }
+  .hero { padding-top: 50px; }
+  .hero h1 { font-size: clamp(49px,12vw,66px); line-height: 1.06; }
+  .hero-lede { font-size: 18px; line-height: 1.65; }
+  .hero-proof { align-items: flex-start; font-size: 13px; line-height: 1.5; }
+  .button { min-height: 50px; font-size: 14px; }
+  .quiet-link { font-size: 14px; }
+  .visual-top,.visual-foot { font-size: 10px; }
+  .visual-title { font-size: 25px; }
+  .flow-node b { font-size: 14px; }
+  .flow-node small { font-size: 12px; }
+  .hero-ribbon { gap: 8px; font-size: 8px; }
+  .section { padding: 70px 0; }
+  .section-intro h2,.method-heading h2,.blueprint-copy h2,.fit-layout h2 { font-size: clamp(42px,10vw,54px); }
+  .problem-section .section-intro p,.method-heading p,.blueprint-copy > p,.contact-copy > p { font-size: 16px; }
+  .friction-card { padding: 20px; }
+  .friction-card h3 { margin-top: 16px; font-size: 19px; }
+  .friction-card p { font-size: 15px; }
+  .section-note { font-size: 13px; }
+  .step h3 { font-size: 20px; }
+  .step p { font-size: 15px; }
+  .price-row strong { font-size: 46px; }
+  .price-row span { font-size: 10px; }
+  .report-title { font-size: 31px; }
+  .report-subtitle { font-size: 13px; }
+  .report-item { font-size: 13px; }
+  .report-header,.report-footer { font-size: 9px; }
+  .fit-list h3 { font-size: 16px; }
+  .fit-list p { font-size: 14px; }
+  .contact-copy h2 { font-size: clamp(48px,11vw,60px); }
+  .contact-email > span { font-size: 13px; }
+  .contact-email a { font-size: 18px; }
+  .no-call { font-size: 13px; }
+  .contact-form label { font-size: 13px; }
+  .contact-form input,.contact-form textarea { font-size: 16px; }
+  .form-note { font-size: 12px; }
+  .footer-email,.copyright { font-size: 12px; }
+  .footer-inner { gap: 14px 18px; }
+}
