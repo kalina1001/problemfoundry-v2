@@ -1,6 +1,6 @@
 (function () {
   document.getElementById('year').textContent = String(new Date().getFullYear());
-  var form = document.getElementById('inquiry-form');
+  var menuButton = document.querySelector('.menu-toggle');\n  var nav = document.getElementById('main-nav');\n  menuButton.addEventListener('click', function () {\n    var open = menuButton.getAttribute('aria-expanded') === 'true';\n    menuButton.setAttribute('aria-expanded', String(!open));\n    nav.classList.toggle('is-open', !open);\n  });\n  nav.addEventListener('click', function (event) {\n    if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }\n  });\n  var form = document.getElementById('inquiry-form');
   var status = document.getElementById('form-status');
   form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -13,7 +13,7 @@
     var body = 'Name: ' + name + '\nEmail: ' + email + '\nCompany / industry: ' + (company || 'Not specified') + '\n\nWorkflow to review:\n' + challenge + '\n\nSent from problemfoundry.eu';
     var recipient = 'hello@problemfoundry.eu';
     var url = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    status.textContent = 'Your email app should open now. Please press Send there to complete your inquiry. If nothing opens, email ' + recipient + ' directly.';
+    status.classList.add('is-ready');\n    status.textContent = 'Draft prepared. Your email app should open now; press Send there to complete your inquiry. If it does not open, email ' + recipient + ' directly.';
     window.location.href = url;
   });
 })();
