@@ -447,3 +447,48 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
   .site-header nav > a:not(.nav-contact) { display:block; padding:13px 2px; border-bottom:1px solid var(--line); font-size:15px; }
   .site-header nav .nav-contact { align-self:flex-start; margin:12px 0 6px; }
 }
+
+
+/* Neutral graphite and warm stone palette */
+:root {
+  --paper:#242629;
+  --paper-deep:#303236;
+  --ink:#1b1d20;
+  --ink-soft:#c9c6be;
+  --body:#c4c2bb;
+  --line:#4a4b4e;
+  --lime:#d1c7ad;
+  --lime-deep:#beb39a;
+  --white:#ebe8df;
+}
+.site-header,.hero,.method-section { background:#242629; }
+.problem-section { background:#2a2c2f; }
+.blueprint-section { background:#303236; }
+.fit-section { background:#27292c; }
+.contact-section { background:#1d1f22; }
+.site-footer { background:#17191c; }
+.workflow-visual { background:#303337; border-color:#57595b; }
+.workflow-visual::before { border-color:#ffffff0d; }
+.flow-node { border-color:#68696a; }
+.flow-node-focus { background:#d1c7ad14; border-color:#d1c7ad88; }
+.node-symbol,.card-icon { background:#d1c7ad18; color:var(--lime); }
+.friction-card { background:#343639; border-color:#5a5b5d; }
+.friction-card h3,.step h3,.fit-list h3 { color:#ebe8df; }
+.fit-list article { border-color:#4a4b4e; }
+.fit-list article > span { background:#d1c7ad; color:#27292c; }
+.report-card { background:#37393c; border-color:#656669; color:#ebe8df; }
+.report-rule { background:#9d9b94; }
+.report-item { border-bottom-color:#5a5b5e; color:#e0ddd5; }
+.contact-form input,.contact-form textarea { background:#292b2e; border-color:#626366; }
+.contact-form input:focus,.contact-form textarea:focus { border-color:var(--lime); box-shadow:0 0 0 2px #d1c7ad20; }
+.nav-contact:hover { background:var(--lime); border-color:var(--lime); color:var(--ink); }
+.menu-toggle { border-color:#626366; }
+.site-header nav { background:#242629; }
+.hero h1 em,h2 em,.method-heading h2 em,.blueprint-copy h2 em,.fit-layout h2 em { color:var(--lime); }
+.proof-icon,.step-arrow,.quiet-link span,.report-item span,.contact-email a,.no-call span { color:var(--lime); }
+.eyebrow,.eyebrow-dark,.problem-section .eyebrow,.eyebrow-light { color:#d1c7ad; }
+.eyebrow-dot { background:var(--lime); box-shadow:0 0 0 4px #d1c7ad20; }
+.button-primary,.button-lime,.button-dark { background:var(--lime); color:var(--ink); }
+.button-primary:hover,.button-lime:hover,.button-dark:hover { background:var(--lime-deep); }
+.brand-mark { background:var(--lime); }
+@media (max-width:680px) { .site-header nav { background:#242629; } }
