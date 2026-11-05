@@ -393,3 +393,41 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
 @media (min-width: 901px) {
   .hero h1 { font-size: clamp(58px,5.4vw,74px); }
 }
+
+
+/* Refinements: quieter supporting type, natural section rhythm, unified line icons */
+.eyebrow,.visual-top,.visual-foot,.hero-ribbon,.step-top,.report-header,.report-footer,
+.card-index,.price-row span { font-weight: 500; }
+.eyebrow { font-size: 13px; letter-spacing: 1px; }
+.visual-top,.visual-foot { font-size: 12px; font-weight: 500; letter-spacing: .75px; }
+.visual-foot { gap: 12px; }
+.hero-ribbon { font-size: 12px; font-weight: 500; letter-spacing: .85px; }
+.section-intro { gap: 42px; }
+.section-intro h2 { max-width: 620px; }
+.problem-section .section-intro p { font-weight: 400; }
+.card-index,.step-top { font-size: 13px; font-weight: 500; letter-spacing: .7px; }
+.price-row span { font-size: 12px; letter-spacing: .55px; }
+.report-header,.report-footer { font-size: 11px; font-weight: 500; letter-spacing: .7px; }
+.report-item { font-size: 16px; font-weight: 400; }
+.report-item span { font-weight: 500; }
+.form-note { font-weight: 400; }
+.brand-mark { padding: 0; }
+.brand-mark svg { width: 26px; height: 26px; overflow: visible; fill: none; stroke: currentColor; stroke-width: 2.3; stroke-linecap: round; stroke-linejoin: round; }
+.icon-svg { display: block; width: 20px; height: 20px; }
+.node-symbol,.card-icon,.proof-icon { display: grid; place-items: center; flex: 0 0 auto; }
+.node-symbol .icon-svg { width: 19px; height: 19px; }
+.card-icon .icon-svg { width: 22px; height: 22px; }
+.proof-icon .icon-svg,.visual-spark .icon-svg { width: 17px; height: 17px; }
+.step-arrow .icon-svg { width: 20px; height: 20px; }
+.no-call > span { display: grid; place-items: center; }
+.no-call .icon-svg { width: 17px; height: 17px; }
+@media (max-width: 680px) {
+  .eyebrow { font-size: 11px; letter-spacing: .8px; }
+  .visual-top,.visual-foot { font-size: 10px; }
+  .hero-ribbon { font-size: 8px; }
+  .section-intro { gap: 14px; }
+  .card-index,.step-top { font-size: 12px; }
+  .price-row span { font-size: 10px; }
+  .report-header,.report-footer { font-size: 9px; }
+  .report-item { font-size: 13px; }
+}
