@@ -11,7 +11,6 @@
     var challenge = document.getElementById('challenge').value.trim();
     var subject = 'Workflow review inquiry — ' + (company || name);
     var body = 'Name: ' + name + '\nEmail: ' + email + '\nCompany / industry: ' + (company || 'Not specified') + '\n\nWorkflow to review:\n' + challenge + '\n\nSent from problemfoundry.eu';
-    // Replace with the verified domain mailbox once it is activated.
     var recipient = 'hello@problemfoundry.eu';
     var url = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     status.textContent = 'Your email app should open now. Please press Send there to complete your inquiry. If nothing opens, email ' + recipient + ' directly.';
