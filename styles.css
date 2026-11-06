@@ -656,8 +656,8 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
 body { background:var(--pf-graphite); color:#ebe8df; }
 .site-header,.hero,.method-section { background:var(--pf-graphite); color:#ebe8df; }
 .problem-section { background:var(--pf-surface); color:#ebe8df; }
-.blueprint-section { background:#2e3033; color:#ebe8df; }
-.fit-section { background:#27292c; color:#ebe8df; }
+.blueprint-section { background:var(--pf-surface); color:#ebe8df; }
+.fit-section { background:var(--pf-graphite); color:#ebe8df; }
 .contact-section { background:var(--pf-graphite-deep); color:#ebe8df; }
 .site-footer { background:var(--pf-graphite-dark); color:#ebe8df; }
 .header-inner { border-bottom-color:var(--pf-line); }
