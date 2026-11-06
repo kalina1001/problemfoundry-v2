@@ -625,3 +625,86 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
   }
   .hero-ribbon { font-size:11px; letter-spacing:.1px; }
 }
+
+/* ProblemFoundry unified graphite, stone and sand design system */
+:root {
+  --pf-graphite:#242629;
+  --pf-graphite-deep:#1d1f22;
+  --pf-graphite-dark:#17191c;
+  --pf-surface:#2a2c2f;
+  --pf-surface-raised:#303236;
+  --pf-surface-card:#343639;
+  --pf-stone:#e8e5dc;
+  --pf-stone-raised:#dedbd2;
+  --pf-sand:#d1c7ad;
+  --pf-sand-hover:#beb39a;
+  --pf-ink:#303236;
+  --pf-muted:#c4c2bb;
+  --pf-muted-ink:#55585a;
+  --pf-line:#4a4b4e;
+  --pf-line-light:#c3c0b7;
+  --paper:var(--pf-graphite);
+  --paper-deep:var(--pf-surface-raised);
+  --ink:var(--pf-ink);
+  --ink-soft:var(--pf-muted);
+  --body:var(--pf-muted);
+  --line:var(--pf-line);
+  --lime:var(--pf-sand);
+  --lime-deep:var(--pf-sand-hover);
+  --white:#ebe8df;
+}
+body { background:var(--pf-graphite); color:#ebe8df; }
+.site-header,.hero,.method-section { background:var(--pf-graphite); color:#ebe8df; }
+.problem-section { background:var(--pf-surface); color:#ebe8df; }
+.blueprint-section { background:#2e3033; color:#ebe8df; }
+.fit-section { background:#27292c; color:#ebe8df; }
+.contact-section { background:var(--pf-graphite-deep); color:#ebe8df; }
+.site-footer { background:var(--pf-graphite-dark); color:#ebe8df; }
+.header-inner { border-bottom-color:var(--pf-line); }
+.site-header nav { background:var(--pf-graphite); }
+.site-header nav a:not(.nav-contact) { color:#c4c2bb; }
+.nav-contact { border-color:#626366; color:#ebe8df; }
+.workflow-visual { background:var(--pf-surface-raised); border-color:#4a4b4e; box-shadow:0 22px 58px #08090b4a; }
+.flow-node { background:#ffffff05; border-color:#55575a; }
+.flow-node-focus { background:#d1c7ad18; border-color:#d1c7ad; }
+.flow-node b,.visual-title { color:#ebe8df; }
+.flow-node small,.visual-top,.visual-foot { color:#c4c2bb; }
+.hero-ribbon { border-top-color:var(--pf-line); color:#c4c2bb; }
+.ribbon-line { background:#626366; }
+.friction-card { background:var(--pf-surface-card); border-color:#55575a; }
+.friction-card h3,.step h3,.fit-list h3,.report-title { color:#ebe8df; }
+.friction-card p,.step p,.problem-section .section-intro p,.method-heading p,
+.blueprint-copy > p,.fit-list p,.contact-copy > p { color:#c4c2bb; }
+.section-note,.hero-proof,.contact-email > span,.no-call,.form-note { color:#c4c2bb; }
+.steps,.step + .step,.fit-list article { border-color:var(--pf-line); }
+.card-icon,.node-symbol { background:#d1c7ad18; color:var(--pf-sand); }
+.fit-list article > span { background:var(--pf-sand); color:var(--pf-ink); }
+.proof-icon,.step-arrow,.quiet-link span,.report-item span,.contact-email a,.no-call span { color:var(--pf-sand); }
+.eyebrow,.eyebrow-dark,.problem-section .eyebrow,.eyebrow-light { color:var(--pf-sand); }
+.eyebrow-dot { background:var(--pf-sand); box-shadow:0 0 0 4px #d1c7ad20; }
+.button-primary,.button-lime,.button-dark { background:var(--pf-sand); color:var(--pf-ink); }
+.button-primary:hover,.button-lime:hover,.button-dark:hover { background:var(--pf-sand-hover); }
+.brand-mark,.brand-footer .brand-mark { background:var(--pf-sand); color:var(--pf-ink); }
+.menu-toggle { border-color:#626366; background:transparent; color:#ebe8df; }
+.menu-toggle:focus-visible { outline-color:var(--pf-sand); }
+.report-card { background:var(--pf-surface-raised); border-color:#55575a; color:#ebe8df; }
+.report-header,.report-footer { color:#c4c2bb; }
+.report-rule { background:#85847e; }
+.report-item { border-bottom-color:#4a4b4e; color:#e0ddd5; }
+.contact-form input,.contact-form textarea { background:#292b2e; border-color:#57595b; color:#ebe8df; }
+.contact-form input::placeholder,.contact-form textarea::placeholder { color:#aaa79f; }
+.contact-form input:focus,.contact-form textarea:focus { border-color:var(--pf-sand); box-shadow:0 0 0 2px #d1c7ad24; }
+.button::after { border-color:#252629; }
+.sample-section { background:var(--pf-stone); color:var(--pf-ink); }
+.sample-section .eyebrow,.sample-label,.service-details-grid article > span { color:#756b58; }
+.sample-heading h2 em { color:#81765f; }
+.sample-heading > p,.sample-card p,.service-details-heading > p,.service-details-grid article p,
+.service-boundary p,.sample-note { color:var(--pf-muted-ink); }
+.sample-heading > p strong,.sample-card h3,.service-details-heading h3,.service-boundary strong { color:var(--pf-ink); }
+.sample-card,.service-details { background:var(--pf-stone-raised); border-color:var(--pf-line-light); }
+.service-details-grid article,.service-boundary { border-color:#bcb9b0; }
+.footer-inner p,.copyright,.footer-email { color:#c4c2bb; }
+@media (max-width:680px) {
+  .site-header nav { background:var(--pf-graphite); }
+  .menu-toggle { background:var(--pf-surface-raised); }
+}
