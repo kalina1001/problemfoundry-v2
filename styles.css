@@ -492,3 +492,15 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
 .button-primary:hover,.button-lime:hover,.button-dark:hover { background:var(--lime-deep); }
 .brand-mark { background:var(--lime); }
 @media (max-width:680px) { .site-header nav { background:#242629; } }
+
+/* Refined wordmark */
+.brand { font-family: var(--font-body); font-weight:600; letter-spacing:.1px; }
+.brand-mark { width:40px; height:40px; border-radius:12px 12px 12px 4px; background:#d1c7ad; color:#252629; }
+.brand-mark .brand-monogram { width:33px; height:33px; fill:currentColor; stroke:none; }
+.brand-mark .brand-monogram text { font-family:Georgia,'Times New Roman',serif; font-weight:700; font-size:26px; letter-spacing:-2px; }
+.brand-footer .brand-mark { background:#d1c7ad; color:#252629; }
+.brand-footer .brand-mark .brand-monogram { width:28px; height:28px; }
+@media (max-width:680px) {
+ .menu-toggle { border-color:#77746d; background:#303236; color:#ebe8df; }
+ .menu-toggle:focus-visible { outline:2px solid #d1c7ad; outline-offset:3px; }
+}
