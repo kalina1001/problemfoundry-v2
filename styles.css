@@ -504,3 +504,18 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
  .menu-toggle { border-color:#77746d; background:#303236; color:#ebe8df; }
  .menu-toggle:focus-visible { outline:2px solid #d1c7ad; outline-offset:3px; }
 }
+
+/* Final brand outline and body type scale */
+.brand-mark { border:1.5px solid #242629; }
+.brand-mark .brand-monogram text { stroke:#242629; stroke-width:.65px; paint-order:stroke fill; }
+.brand-footer .brand-mark { border-color:#242629; }
+.problem-section .section-intro p,.method-heading p,.blueprint-copy > p,.contact-copy > p { font-size:18px; }
+.friction-card p,.step p { font-size:17px; }
+.fit-list p { font-size:16px; }
+.report-item { font-size:17px; }
+@media (max-width:680px) {
+ .problem-section .section-intro p,.method-heading p,.blueprint-copy > p,.contact-copy > p { font-size:17px; }
+ .friction-card p,.step p { font-size:16px; }
+ .fit-list p { font-size:15px; }
+ .report-item { font-size:14px; }
+}
