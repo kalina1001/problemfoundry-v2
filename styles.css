@@ -506,9 +506,9 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
 }
 
 /* Final brand outline and body type scale */
-.brand-mark { border:1.5px solid #242629; }
+.brand-mark { border:2.5px solid #17181a; box-shadow:0 0 0 1px #17181a24; }
 .brand-mark .brand-monogram text { stroke:#242629; stroke-width:.65px; paint-order:stroke fill; }
-.brand-footer .brand-mark { border-color:#242629; }
+.brand-footer .brand-mark { border-color:#17181a; }
 .problem-section .section-intro p,.method-heading p,.blueprint-copy > p,.contact-copy > p { font-size:18px; }
 .friction-card p,.step p { font-size:17px; }
 .fit-list p { font-size:16px; }
