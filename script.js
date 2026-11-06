@@ -23,7 +23,8 @@
     var body = 'Name: ' + name + '\nEmail: ' + email + '\nCompany / industry: ' + (company || 'Not specified') + '\n\nWorkflow to review:\n' + challenge + '\n\nSent from problemfoundry.eu';
     var recipient = 'hello@problemfoundry.eu';
     var url = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    status.classList.add('is-ready');\n    status.textContent = 'Draft prepared. Your email app should open now; press Send there to complete your inquiry. If it does not open, email ' + recipient + ' directly.';
+    status.classList.add('is-ready');
+    status.textContent = 'Draft prepared. Your email app should open now; press Send there to complete your inquiry. If it does not open, email ' + recipient + ' directly.';
     window.location.href = url;
   });
 })();
