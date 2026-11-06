@@ -563,7 +563,7 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
  .service-boundary p { font-size:14px; }
 }
 
-/* Keep dark contours inside light surfaces so they remain visible on dark sections */
-.brand-mark { border:0; box-shadow:inset 0 0 0 2px #17181a; }
-.brand-footer .brand-mark { border:0; box-shadow:inset 0 0 0 2px #17181a; }
-.button { box-shadow:inset 0 0 0 2px #252629; }
+/* Keep dark contours inside light surfaces, with stronger contrast */
+.brand-mark { border:0; box-shadow:inset 0 0 0 3px #17181a; }
+.brand-footer .brand-mark { border:0; box-shadow:inset 0 0 0 3px #17181a; }
+.button { box-shadow:inset 0 0 0 3px #252629; }
