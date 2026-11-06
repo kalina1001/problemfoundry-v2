@@ -607,3 +607,21 @@ body { background: var(--paper); color: var(--white); font-size: 18px; }
 @media (max-width:680px) {
   .brand-mark,.brand-footer .brand-mark { width:46px; height:46px; flex-basis:46px; }
 }
+
+/* Supporting labels: readable, calm typography instead of tiny spaced capitals */
+.eyebrow,.visual-top,.visual-foot,.hero-ribbon,.step-top,.report-header,.report-footer,
+.card-index,.price-row span,.sample-label,.service-details-grid article > span {
+  font-family:var(--font-body);
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:.25px;
+  line-height:1.4;
+}
+@media (max-width:680px) {
+  .eyebrow,.visual-top,.visual-foot,.step-top,.report-header,.report-footer,
+  .card-index,.price-row span,.sample-label,.service-details-grid article > span {
+    font-size:13px;
+    letter-spacing:.15px;
+  }
+  .hero-ribbon { font-size:11px; letter-spacing:.1px; }
+}
