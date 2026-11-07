@@ -708,3 +708,27 @@ body { background:var(--pf-graphite); color:#ebe8df; }
   .site-header nav { background:var(--pf-graphite); }
   .menu-toggle { background:var(--pf-surface-raised); }
 }
+
+/* Content hierarchy: clearer sample, more comfortable labels, controlled headline wraps */
+.sample-heading { align-items:start; }
+.sample-heading h2 { max-width:620px; font-size:clamp(38px,4.4vw,58px); line-height:1.12; text-wrap:balance; }
+.sample-heading > p { font-size:18px; line-height:1.68; }
+.sample-label { display:inline-block; font-size:12px; font-weight:600; letter-spacing:.7px; }
+.sample-card { min-height:245px; padding:25px 24px; }
+.sample-card h3 { margin-top:25px; font-size:21px; line-height:1.25; }
+.sample-card p { font-size:17px; line-height:1.7; }
+.sample-note { font-size:14px; }
+.fit-layout h2 { max-width:590px; font-size:clamp(40px,4.5vw,58px); line-height:1.12; text-wrap:balance; }
+.report-item { line-height:1.5; }
+@media (max-width:760px) {
+  .sample-heading h2 { font-size:clamp(38px,9vw,50px); }
+  .sample-heading > p { font-size:17px; }
+  .sample-card { min-height:0; padding:21px; }
+  .sample-card h3 { margin-top:19px; font-size:20px; }
+  .sample-card p { font-size:16px; line-height:1.68; }
+  .sample-label { font-size:11px; }
+  .sample-note { font-size:14px; }
+}
+@media (max-width:680px) {
+  .fit-layout h2 { font-size:clamp(39px,9vw,48px); }
+}
