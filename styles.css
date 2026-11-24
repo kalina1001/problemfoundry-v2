@@ -224,8 +224,9 @@ button,input,textarea { font:inherit; }
   .method-heading { display:block; margin-top:18px; }
   .method-heading p { margin-top:14px; font-size:16px; }
   .steps { grid-template-columns:1fr; margin-top:25px; }
-  .step,.step+.step { min-height:0; padding:18px 0; border-left:0; }
-  .step+.step { border-top:1px solid var(--line); }
+  .step,.step+.step { min-height:0; padding:18px 0; border-left:0; border-top:0; }
+  .step:nth-child(even) { padding-left:0; border-left:0; }
+  .step:last-child { border-bottom:0; }
   .step h3 { margin:18px 0 7px; font-size:19px; }
   .step p { font-size:15px; }
   .blueprint-layout,.fit-layout,.contact-layout { grid-template-columns:1fr; gap:31px; }
