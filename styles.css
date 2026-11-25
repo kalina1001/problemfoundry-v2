@@ -427,3 +427,58 @@ button,input,textarea { font:inherit; }
     font-size:12px;
   }
 }
+
+
+/* Give the workflow panel breathing room and simplify its three steps. */
+.hero { padding-bottom:44px; }
+.workflow-visual { overflow:visible; }
+.flow {
+  position:relative;
+  gap:0;
+  padding-left:20px;
+}
+.flow::before {
+  position:absolute;
+  content:"";
+  top:20px;
+  bottom:20px;
+  left:4px;
+  width:1px;
+  background:#77746d;
+}
+.flow-node {
+  position:relative;
+  min-height:0;
+  gap:0;
+  padding:15px 4px;
+  border:0;
+  border-bottom:1px solid #59616a;
+  border-radius:0;
+  background:transparent;
+}
+.flow-node:last-child { border-bottom:0; }
+.flow-node::before {
+  position:absolute;
+  content:"";
+  top:50%;
+  left:-20px;
+  width:9px;
+  height:9px;
+  border:1.5px solid var(--sand);
+  border-radius:50%;
+  background:#2d343b;
+  transform:translateY(-50%);
+}
+.node-symbol { display:none !important; }
+.flow-node-focus {
+  border-color:#59616a;
+  background:transparent;
+}
+.flow-node b { font-size:16px; }
+.flow-node small { font-size:14px; }
+@media (max-width:680px) {
+  .hero { padding-bottom:36px; }
+  .flow { padding-left:19px; }
+  .flow-node { padding:14px 2px; }
+  .flow-node::before { left:-19px; }
+}
