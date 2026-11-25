@@ -362,3 +362,68 @@ button,input,textarea { font:inherit; }
 .step-top { color:#b8aa8c; }
 .report-header,.report-subtitle { color:#64615a; }
 @media (max-width:680px) { .step-top { font-size:14px; } }
+
+
+/* Align the hero workflow visual with the site's restrained neutral system. */
+.workflow-visual {
+  min-height:0;
+  padding:24px;
+  border-radius:14px;
+  border-color:#58616a;
+  background:#2d343b;
+}
+.workflow-visual::before { display:none; }
+.visual-title {
+  max-width:420px;
+  margin:22px 0 19px;
+  font-size:clamp(23px,2.3vw,27px);
+  line-height:1.25;
+  letter-spacing:-.025em;
+}
+.flow { gap:8px; }
+.flow-connector { display:none; }
+.flow-node {
+  min-height:68px;
+  padding:12px 14px;
+  border:1px solid #59616a;
+  border-radius:8px;
+  background:#ffffff04;
+}
+.flow-node-focus {
+  border-color:#b9ad8e;
+  background:#cdb58f0d;
+}
+.flow-node b { font-size:16px; font-weight:600; }
+.flow-node small { font-size:14px; }
+@media (max-width:680px) {
+  .workflow-visual { min-height:0; padding:21px 18px; }
+  .visual-title { margin:18px 0 16px; font-size:24px; }
+  .flow-node { min-height:64px; padding:10px 12px; }
+  .flow-node b { font-size:15px; }
+  .flow-node small { font-size:13px; }
+}
+
+/* Keep the footer brand on its own line and align email with copyright below. */
+@media (max-width:680px) {
+  .footer-inner {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    gap:15px 10px;
+    padding:20px 0;
+  }
+  .brand-footer { grid-column:1 / -1; }
+  .footer-email {
+    grid-column:2;
+    grid-row:2;
+    margin:0;
+    font-size:12px;
+    white-space:nowrap;
+  }
+  .copyright {
+    grid-column:1;
+    grid-row:2;
+    flex-basis:auto;
+    font-size:12px;
+  }
+}
