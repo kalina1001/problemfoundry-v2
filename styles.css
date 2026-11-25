@@ -333,3 +333,15 @@ button,input,textarea { font:inherit; }
   .step.phase-card h3 { margin:16px 0 7px; }
   .phase-output { margin-top:12px; padding-top:0; }
 }
+
+
+/* Mobile type scale: keep recurring labels legible and consistent. */
+@media (max-width:680px) {
+  .visual-top,.visual-foot { font-size:13px; }
+  .flow-node small { font-size:13px; }
+  .hero-ribbon { font-size:13px; }
+  .report-header,.report-footer { font-size:13px; }
+  .report-item { font-size:15px; }
+  .report-item>span:first-child { font-size:13px; }
+  .footer-email,.copyright { font-size:13px; }
+}
