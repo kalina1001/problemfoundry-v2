@@ -482,3 +482,97 @@ button,input,textarea { font:inherit; }
   .flow-node { padding:14px 2px; }
   .flow-node::before { left:-19px; }
 }
+
+
+/* Rebalance the light loss section: cards first, message alongside. */
+.problem-section .wrap {
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);
+  align-items:start;
+  column-gap:clamp(32px,6vw,84px);
+  row-gap:20px;
+}
+.problem-section .section-intro {
+  display:block;
+  grid-column:2;
+  grid-row:1;
+}
+.problem-section .section-intro .eyebrow {
+  padding:0;
+  margin-bottom:18px;
+}
+.problem-section .friction-grid {
+  display:flex;
+  grid-column:1;
+  grid-row:1;
+  flex-direction:column;
+  gap:12px;
+  margin-top:0;
+}
+.problem-section .friction-card {
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr);
+  align-items:center;
+  column-gap:17px;
+  min-height:0;
+  padding:19px 22px;
+}
+.problem-section .friction-card .card-icon {
+  grid-column:1;
+  grid-row:1 / span 2;
+}
+.problem-section .friction-card h3 {
+  grid-column:2;
+  margin:0 0 5px;
+}
+.problem-section .friction-card p {
+  grid-column:2;
+  max-width:none;
+  font-size:16px;
+  line-height:1.5;
+}
+.footer-back-to-top {
+  display:inline-flex;
+  min-height:44px;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  padding:10px 16px;
+  border:1px solid #77746d;
+  border-radius:999px;
+  color:var(--text);
+  font-size:14px;
+  font-weight:500;
+  text-decoration:none;
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease;
+}
+.footer-back-to-top span:last-child {
+  color:var(--sand);
+  font-size:19px;
+  line-height:1;
+}
+.footer-back-to-top:hover,
+.footer-back-to-top:focus-visible {
+  border-color:var(--sand);
+  background:var(--sand);
+  color:var(--stone-ink);
+}
+.footer-back-to-top:hover span:last-child,
+.footer-back-to-top:focus-visible span:last-child { color:var(--stone-ink); }
+@media (max-width:900px) {
+  .problem-section .wrap { grid-template-columns:1fr; gap:30px; }
+  .problem-section .section-intro { grid-column:1; grid-row:1; }
+  .problem-section .friction-grid { grid-column:1; grid-row:2; }
+}
+@media (max-width:680px) {
+  .problem-section .wrap { gap:24px; }
+  .problem-section .section-intro .eyebrow { margin-bottom:10px; }
+  .problem-section .friction-grid { gap:10px; }
+  .problem-section .friction-card { padding:17px; column-gap:14px; }
+  .problem-section .friction-card p { font-size:15px; }
+  .footer-inner { grid-template-columns:minmax(0,1fr) auto; }
+  .brand-footer { grid-column:1; grid-row:1; }
+  .footer-back-to-top { grid-column:2; grid-row:1; min-height:40px; padding:8px 12px; font-size:13px; }
+  .footer-email { grid-column:2; grid-row:2; }
+  .copyright { grid-column:1; grid-row:2; }
+}
