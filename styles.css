@@ -13,8 +13,8 @@
   --stone:#dedbd3;
   --stone-ink:#292e33;
   --stone-muted:#555b61;
-  --font-display:Arial, 'Helvetica Neue', sans-serif;
-  --font-body:Arial, 'Helvetica Neue', sans-serif;
+  --font-display:'DM Sans', Arial, sans-serif;
+  --font-body:'Source Sans 3', Arial, sans-serif;
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:90px; }
@@ -120,13 +120,13 @@ button,input,textarea { font:inherit; }
 .cost-note strong { color:var(--text); font-size:16px; font-weight:600; }
 .cost-note span { color:var(--muted); font-size:15px; line-height:1.45; }
 .report-card { padding:27px 29px 22px; border:1px solid #c3bfae; border-radius:12px; background:var(--stone); color:var(--stone-ink); }
-.report-header,.report-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; color:#66645d; font-size:12px; font-weight:500; letter-spacing:.02em; }
+.report-header,.report-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; color:#66645d; font-size:13px; font-weight:500; letter-spacing:.02em; }
 .report-header i { padding:0 4px; color:#82795f; font-style:normal; }
 .report-title { margin-top:29px; color:var(--stone-ink); font:400 36px/1.16 var(--font-display) !important; letter-spacing:-.02em; }
 .report-subtitle { margin-top:8px; color:var(--stone-muted); font-size:15px; line-height:1.5; }
 .report-rule { height:2px; margin:18px 0 3px; background:#77756c; }
 .report-item { display:flex; align-items:baseline; gap:13px; padding:12px 0; border-bottom:1px solid #c8c4b9; color:var(--stone-ink); font-size:16px; line-height:1.42; }
-.report-item>span:first-child { flex:0 0 64px; color:#786f59; font-size:12px; font-weight:600; letter-spacing:.03em; }
+.report-item>span:first-child { flex:0 0 64px; color:#786f59; font-size:13px; font-weight:600; letter-spacing:.02em; }
 .report-copy { color:#414345; }
 .report-footer { margin-top:17px; }
 
@@ -242,7 +242,7 @@ button,input,textarea { font:inherit; }
   .report-title { margin-top:25px; font-size:30px; }
   .report-subtitle { font-size:14px; }
   .report-item { gap:9px; padding:10px 0; font-size:14px; }
-  .report-item>span:first-child { flex-basis:52px; font-size:11px; }
+  .report-item>span:first-child { flex-basis:52px; font-size:12px; }
   .fit-layout { gap:24px; }
   .fit-intro { margin-top:13px; font-size:17px; }
   .fit-list article { gap:12px; padding:15px 0; }
