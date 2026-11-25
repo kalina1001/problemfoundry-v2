@@ -355,3 +355,10 @@ button,input,textarea { font:inherit; }
 .card-index,.visual-top .visual-index,.visual-foot,.hero-proof,.hero-ribbon,.section-note,.fit-list article>span { display:none !important; }
 .phase-output { font-size:15px; }
 .fit-list article { grid-template-columns:1fr; gap:0; }
+
+
+/* Further quiet repeated labels without changing the section layout. */
+.no-call,.footer-inner>p,.report-footer,.phase-output strong { display:none !important; }
+.step-top { color:#b8aa8c; }
+.report-header,.report-subtitle { color:#64615a; }
+@media (max-width:680px) { .step-top { font-size:14px; } }
