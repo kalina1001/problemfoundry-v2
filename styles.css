@@ -809,3 +809,13 @@ button,input,textarea { font:inherit; }
   .method-section .step.phase-card,.method-section .step.phase-card:nth-child(even),.method-section .step.phase-card:last-child { padding:17px 18px; }
   .contact-form label:not(:first-child) { margin-top:13px; }
 }
+
+
+/* The header scrolls with the page, so chapter anchors align to the viewport top. */
+html { scroll-padding-top:0; }
+@media (max-width:680px) { html { scroll-padding-top:0; } }
+@media (min-width:901px) {
+  .section h2,.contact-copy h2,.method-heading h2,.blueprint-copy h2,.fit-layout h2 {
+    font-size:clamp(50px,4.8vw,64px);
+  }
+}
