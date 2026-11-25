@@ -19,8 +19,8 @@
     var email = document.getElementById('email').value.trim();
     var company = document.getElementById('company').value.trim();
     var challenge = document.getElementById('challenge').value.trim();
-    var subject = 'Workflow review inquiry — ' + (company || name);
-    var body = 'Name: ' + name + '\nEmail: ' + email + '\nCompany / industry: ' + (company || 'Not specified') + '\n\nWorkflow to review:\n' + challenge + '\n\nSent from problemfoundry.eu';
+    var subject = 'ProblemFoundry inquiry — ' + (company || name);
+    var body = 'Name: ' + name + '\nEmail: ' + email + '\nCompany / industry: ' + (company || 'Not specified') + '\n\nProblem / recurring process:\n' + challenge + '\n\nSent from problemfoundry.eu';
     var recipient = 'hello@problemfoundry.eu';
     var url = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     status.classList.add('is-ready');
