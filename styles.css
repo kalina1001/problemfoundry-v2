@@ -294,3 +294,42 @@ button,input,textarea { font:inherit; }
   border-color:#c8c1b5;
   background:#f0ede6;
 }
+
+/* Three simple phases make the method scannable without hiding the detail. */
+.steps { grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; }
+.step.phase-card,
+.step.phase-card:nth-child(even),
+.step.phase-card:last-child {
+  display:flex;
+  grid-column:auto;
+  flex-direction:column;
+  align-items:stretch;
+  min-height:260px;
+  padding:22px 22px 20px;
+  border:0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.step.phase-card + .phase-card { border-left:1px solid var(--line); }
+.step.phase-card h3 { margin:22px 0 9px; }
+.step.phase-card p { max-width:none; }
+.phase-output {
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  margin-top:auto;
+  padding-top:20px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.5;
+}
+.phase-output strong { color:var(--sand); font-size:13px; font-weight:600; }
+@media (max-width:900px) {
+  .step.phase-card,.step.phase-card:nth-child(even),.step.phase-card:last-child { min-height:275px; padding-inline:16px; }
+}
+@media (max-width:680px) {
+  .steps { grid-template-columns:1fr; }
+  .step.phase-card,.step.phase-card:nth-child(even),.step.phase-card:last-child { min-height:0; padding:18px 0; border:0; border-top:1px solid var(--line); }
+  .step.phase-card h3 { margin:16px 0 7px; }
+  .phase-output { margin-top:12px; padding-top:0; }
+}
