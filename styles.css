@@ -345,3 +345,7 @@ button,input,textarea { font:inherit; }
   .report-item>span:first-child { font-size:13px; }
   .footer-email,.copyright { font-size:13px; }
 }
+
+
+/* Keep punctuation in light sample headings with the heading ink. */
+.blueprint-section .lime-dot { color:var(--stone-ink); }
