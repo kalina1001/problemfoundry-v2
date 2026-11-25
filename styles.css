@@ -1,20 +1,20 @@
 :root {
   color-scheme: dark;
-  --graphite:#242a31;
-  --graphite-raised:#2d343c;
-  --graphite-card:#363e47;
-  --graphite-deep:#1d232a;
-  --graphite-dark:#171d23;
-  --sand:#d1b58b;
-  --sand-hover:#ddc49b;
-  --text:#f2f1ed;
-  --muted:#c4c6c7;
-  --line:#596169;
-  --stone:#dedbd3;
+  --graphite:#252b32;
+  --graphite-raised:#30373f;
+  --graphite-card:#39424a;
+  --graphite-deep:#20262d;
+  --graphite-dark:#191f26;
+  --sand:#cdb58f;
+  --sand-hover:#dbc7a3;
+  --text:#f1f0ec;
+  --muted:#c5c7c8;
+  --line:#5d666e;
+  --stone:#e7e2d9;
   --stone-ink:#292e33;
   --stone-muted:#555b61;
   --font-display:'DM Sans', Arial, sans-serif;
-  --font-body:'Source Sans 3', Arial, sans-serif;
+  --font-body:'DM Sans', Arial, sans-serif;
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:90px; }
@@ -60,7 +60,7 @@ button,input,textarea { font:inherit; }
 .proof-icon { display:grid; place-items:center; color:var(--sand); }
 .workflow-visual { position:relative; overflow:hidden; min-height:402px; padding:26px 28px 22px; border:1px solid var(--line); border-radius:16px; background:var(--graphite-raised); }
 .workflow-visual::before { position:absolute; content:""; width:310px; height:310px; top:90px; right:-90px; border:1px solid #ffffff0d; border-radius:50%; box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05; }
-.visual-top,.visual-foot { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; color:var(--muted); font-size:13px; font-weight:500; letter-spacing:.02em; }
+.visual-top,.visual-foot { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; color:var(--muted); font-size:14px; font-weight:500; letter-spacing:.02em; }
 .visual-index { color:#aaa79f; }
 .visual-title { position:relative; z-index:1; margin:27px 0 21px; font:500 27px/1.28 var(--font-display); }
 .lime-dot { color:var(--sand); }
@@ -75,11 +75,11 @@ button,input,textarea { font:inherit; }
 .flow-connector span { width:3px; height:3px; border-radius:50%; background:#aaa79f; }
 .visual-foot { margin-top:18px; font-size:13px; }
 .visual-spark { color:var(--sand); }
-.hero-ribbon { display:flex; min-height:66px; align-items:center; gap:22px; margin-top:58px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; font-weight:500; letter-spacing:.04em; }
+.hero-ribbon { display:flex; min-height:66px; align-items:center; gap:22px; margin-top:58px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; font-weight:500; letter-spacing:.025em; }
 .ribbon-line { width:28px; height:1px; background:#77787a; }
 
 .section { padding:84px 0; }
-.problem-section { background:var(--graphite-raised); }
+.problem-section { background:var(--stone); color:var(--stone-ink); }
 .section-intro { display:grid; grid-template-columns:.72fr 1.18fr 1fr; align-items:start; gap:34px; }
 .section-intro .eyebrow { padding-top:10px; }
 .section-intro h2,.method-heading h2,.blueprint-copy h2,.fit-layout h2,.contact-copy h2 { margin:0; color:var(--text); font-size:clamp(42px,4.3vw,58px); font-weight:500; line-height:1.12; letter-spacing:-.035em; }
@@ -109,7 +109,7 @@ button,input,textarea { font:inherit; }
 .step h3 { margin:20px 0 9px; color:var(--text); font:600 21px/1.3 var(--font-body); }
 .step p { max-width:320px; margin:0; color:var(--muted); font-size:17px; line-height:1.6; }
 
-.blueprint-section { background:var(--graphite-raised); }
+.blueprint-section { background:var(--stone); color:var(--stone-ink); }
 .blueprint-layout { display:grid; grid-template-columns:.9fr 1.1fr; align-items:center; gap:62px; }
 .blueprint-copy h2 { margin-top:20px; }
 .blueprint-copy>p { max-width:465px; margin-top:18px; }
@@ -120,13 +120,13 @@ button,input,textarea { font:inherit; }
 .cost-note strong { color:var(--text); font-size:16px; font-weight:600; }
 .cost-note span { color:var(--muted); font-size:15px; line-height:1.45; }
 .report-card { padding:27px 29px 22px; border:1px solid #c3bfae; border-radius:12px; background:var(--stone); color:var(--stone-ink); }
-.report-header,.report-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; color:#66645d; font-size:13px; font-weight:500; letter-spacing:.02em; }
+.report-header,.report-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; color:#66645d; font-size:14px; font-weight:500; letter-spacing:.02em; }
 .report-header i { padding:0 4px; color:#82795f; font-style:normal; }
 .report-title { margin-top:29px; color:var(--stone-ink); font:400 36px/1.16 var(--font-display) !important; letter-spacing:-.02em; }
 .report-subtitle { margin-top:8px; color:var(--stone-muted); font-size:15px; line-height:1.5; }
 .report-rule { height:2px; margin:18px 0 3px; background:#77756c; }
 .report-item { display:flex; align-items:baseline; gap:13px; padding:12px 0; border-bottom:1px solid #c8c4b9; color:var(--stone-ink); font-size:16px; line-height:1.42; }
-.report-item>span:first-child { flex:0 0 64px; color:#786f59; font-size:13px; font-weight:600; letter-spacing:.02em; }
+.report-item>span:first-child { flex:0 0 64px; color:#786f59; font-size:14px; font-weight:600; letter-spacing:.02em; }
 .report-copy { color:#414345; }
 .report-footer { margin-top:17px; }
 
@@ -264,4 +264,33 @@ button,input,textarea { font:inherit; }
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
   *,*::before,*::after { transition-duration:.01ms !important; animation-duration:.01ms !important; }
+}
+
+
+/* Warm neutral surfaces make the long page easier to scan. */
+.problem-section .section-intro h2,
+.problem-section .friction-card h3,
+.blueprint-section .blueprint-copy h2 { color:var(--stone-ink); }
+.problem-section .section-intro p,
+.problem-section .friction-card p,
+.problem-section .section-note,
+.blueprint-section .blueprint-copy>p,
+.blueprint-section .deliverable-list li { color:var(--stone-muted); }
+.problem-section .eyebrow-dark,
+.blueprint-section .eyebrow-dark { color:#78674e; }
+.problem-section .friction-card {
+  border-color:#c9c2b7;
+  background:#efede7;
+}
+.problem-section .card-index { color:#68645c; }
+.problem-section .card-icon {
+  background:#d1b58b55;
+  color:#423a2f;
+}
+.problem-section .section-note .note-rule { background:#8a7557; }
+.blueprint-section .cost-note strong { color:var(--stone-ink); }
+.blueprint-section .cost-note span { color:var(--stone-muted); }
+.blueprint-section .report-card {
+  border-color:#c8c1b5;
+  background:#f0ede6;
 }
